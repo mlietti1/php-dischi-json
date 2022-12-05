@@ -1,0 +1,24 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header{
+  background-color: #06131f;
+}
+
+main{
+  background-color: #1d2d3c;
+  color: white;
+  min-height: calc(100vh - 72px);
+}
+
+.logo{
+  height: 40px;
+}
+
+.content-wrapper{
+  width: 70%;
+  margin: 2rem auto;
+}

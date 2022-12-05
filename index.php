@@ -15,8 +15,20 @@
 
 <body>
   <div class="wrapper">
-    <div id="app"></div>
+    <div id="app">
+      <header>
+        <div class="container py-3">
+          <img class="logo" src="img/spotify-logo-png-7053.png" alt="Spotify">
+        </div>
+      </header>
+      <main>
+        <div class="content-wrapper">
+
+        </div>
+      </main>
+    </div>
   </div>
 </body>
+<script src="js/main.js"></script>
 
 </html>
