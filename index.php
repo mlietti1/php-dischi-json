@@ -14,20 +14,28 @@
 </head>
 
 <body>
-  <div class="wrapper">
-    <div id="app">
-      <header>
-        <div class="container py-3">
-          <img class="logo" src="img/spotify-logo-png-7053.png" alt="Spotify">
-        </div>
-      </header>
-      <main>
-        <div class="content-wrapper">
 
-        </div>
-      </main>
+  <header>
+    <div class="container py-3">
+      <img class="logo" src="img/spotify-logo-png-7053.png" alt="Spotify">
     </div>
-  </div>
+  </header>
+  <main>
+    <div id="app" class="content-wrapper">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+        <div v-for="(album, index) in albums" :key="index" class="col p-3">
+          <div class="p-3 d-flex flex-column align-items-center mc-card">
+            <img class="poster" :src="album.poster" :alt="album.title">
+            <div class="album-info mt-3 text-center"></div>
+            <h4 class="text-center">{{album.title}}</h4>
+            <p>{{album.author}}</p>
+            <h5>{{album.year}}</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
 </body>
 <script src="js/main.js"></script>
 

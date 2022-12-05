@@ -20,5 +20,15 @@ main{
 
 .content-wrapper{
   width: 70%;
-  margin: 2rem auto;
+  margin: 0 auto;
+}
+
+.poster {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+
+.mc-card{
+  background-color: #112030;
+  border-radius: 10px;
 }
